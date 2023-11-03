@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-container {
+    @apply flex overflow-hidden;
+}
+
+.card {
+    @apply flex-1 p-4 border-2 hidden transition-opacity duration-500 ease-in-out;
+}
+
+.run ~ p {
+    @apply inline;
+}
+
+.marquee {
+    @apply box-border whitespace-nowrap overflow-hidden;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
