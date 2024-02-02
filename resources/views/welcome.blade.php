@@ -53,7 +53,7 @@
                 showCard(currentIndex);
             }
         
-            setInterval(nextCard, 3000);
+            setInterval(nextCard, 1500);
             showCard(currentIndex);
         </script>
         

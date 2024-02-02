@@ -15,7 +15,7 @@
 }
 
 .marquee {
-    @apply box-border whitespace-nowrap overflow-hidden;
+    @apply box-border whitespace-nowrap;
     animation: marquee 20s linear infinite;
 }
 
