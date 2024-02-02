@@ -1,5 +1,5 @@
 <div class="flex justify-between items-start">
-    <div class="text-2xl flex flex-col gap-10">
+    <div class="text-base flex flex-col gap-10">
         @if($data)
             <div class="flex gap-6 mt-4">
                 <p> @svg('heroicon-o-arrow-down', 'w-6 h-6 inline') Total Pemasukan : <span>Rp. {{ number_format($data->sum('pemasukan'), 0, ',', '.') }}</span></p>
@@ -8,7 +8,7 @@
             <p>Total : <span>Rp. {{ number_format($data->sum('pemasukan') - $data->sum('pengeluaran'), 0, ',', '.') }}</span></p>
         @endif
     </div>
-    <div class="text-xl card-container">
+    <div class="text-base card-container">
         @foreach ( $data as $item )
         <div class="card">
             <p><span>{{ date('l, d F Y', strtotime($item->tanggal)) }}</span></p>

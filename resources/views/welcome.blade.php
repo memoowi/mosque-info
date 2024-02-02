@@ -20,10 +20,10 @@
         </style>
         @vite('resources/css/app.css')
     </head>
-    <body class="antialiased bg-background-img bg-cover bg-no-repeat bg-fixed font-mons overflow-hidden mx-auto">
+    <body class="antialiased bg-background-img bg-cover bg-no-repeat bg-fixed font-mons overflow-x-hidden mx-auto">
         <div class="bg-slate-800 bg-opacity-50 py-7 mb-3 text-white text-center">
-            <h1 class="text-6xl font-teko">Masjid Al-Misbach</h1>
-            <p class="text-xl">Jl. ABCDEF No. 10, Bogor</p>
+            <h1 class="text-5xl font-teko">Masjid Darul Ilmi</h1>
+            <p class="text-lg">Jl. ABCDEF No. 10, Bogor</p>
         </div>
         {{-- MAIN --}}
         <div class="text-white mx-20">

@@ -16,11 +16,13 @@ class JadwalJumatComponent extends Component
     {
         $data = JadwalJumat::where('is_active', 1)->first();
         
-        $this->tanggal = $data->tanggal;
-        $this->imam = $data->imam;
-        $this->khotib = $data->khotib;
-        $this->muazin = $data->muazin;
-        $this->judul_khotbah = $data->judul_khotbah;
+        if ($data != null) {
+            $this->tanggal = $data->tanggal;
+            $this->imam = $data->imam;
+            $this->khotib = $data->khotib;
+            $this->muazin = $data->muazin;
+            $this->judul_khotbah = $data->judul_khotbah;
+        }
     }
 
     public function render()

@@ -35,14 +35,14 @@ class KeuanganMasjidResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('pemasukan')
                     ->prefix('Rp')
-                    ->minLength(3)
+                    ->minLength(1)
                     ->maxLength(11)
                     ->default(0)
                     ->required()
                     ->numeric(),
                 Forms\Components\TextInput::make('pengeluaran')
                     ->prefix('Rp')
-                    ->minLength(3)
+                    ->minLength(1)
                     ->maxLength(11)
                     ->default(0)
                     ->required()
